@@ -1,19 +1,38 @@
+body{
+    overflow-x: hidden;
+}
+footer{
+    text-align:center;
+}
 #content {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 100px;
     margin-left: 100px;
 }
+
 .centered{
     margin-left: 30%;
     margin-right: 30%;
 }
+
 .hover{
     cursor: pointer;
 }
+
+.navbar-brand{
+    font-size: 35px;
+}
+
+.navbar-nav{
+    /* position: absolute; */
+    right: 30px;
+}
+
 .prof{
     color:black
 }
+
 .cb{
     border-style: solid;
     border-color: firebrick;
@@ -24,8 +43,46 @@ footer{
     width: 100%;
     background-color: #eeeeee;
     position: relative;
-    
 }
+
 .copyright{
     background-color: rgb(180, 180, 180);
 }
+
+/* Background image */
+
+.jumbotron {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 0px;
+}
+
+.lead span {
+  color: orange;
+  font-weight: bold;
+}
+
+.bg-cover {
+  background-image: url("images/welcomtoua.jpg");
+  background-size: cover;
+  color: white;
+  background-position: center center;
+  position: relative;
+  z-index: -2;
+}
+
+.overlay-jumbo {
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
