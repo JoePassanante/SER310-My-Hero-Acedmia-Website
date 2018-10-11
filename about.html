@@ -2,6 +2,9 @@
 
 <head>
 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
@@ -15,9 +18,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="core.css">
 
-
 </head>
 <style>
+    .heroprofile{
+    height: 60rem;
+}
+.herocard{
+    height: 100rem;
+}
 img{
     user-drag: none; 
     user-select: none;
@@ -26,10 +34,15 @@ img{
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+.imgsgoroundandroundandround{
+    width: 100%;
+}
+.standardimg{
+    height: 40rem;
+}
 </style>
 
-<body>
-
+<body style = "overflow-x: hidden">
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">U.A High School</a>
@@ -42,15 +55,15 @@ img{
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                         <a class="nav-link" href="staff.html">Staff<span class="sr-only">(current)</span></a>
                     </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="distinguishedstudents.html">Distinguished Students</a>
-                    </li>
+                    <a class="nav-link" href="distinguishedstudents.html">Distinguished Students</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact Us</a>
                 </li>
@@ -58,17 +71,18 @@ img{
         </div>
     </nav>
     <!-- End Nav Bar -->
-    <!-- Start About Section -->
-    <!-- http://simpson.edu/wp-content/uploads/2012/06/Students-Walking.jpg -->
-    <img style="width:100%;" id="image" src="https://dailyanimeart.files.wordpress.com/2017/04/my-hero-academia-banner.jpeg">
-    <div style="width: 100%;height: 1rem;background-color: firebrick"></div>
-    <div id="content">
-        <div class="centered">
-            <!-- <p class="text-center">Center aligned text on all viewport sizes.</p> -->
-            <h1 class="text-center">About Our School</h1>
-            <!-- <div style = "width: 100%;height: 0.1rem;background-color: firebrick"></div> -->
+    <div class="jumbotron jumbotron bg-cover">
+        <div class="overlay-jumbo"></div>
+        <div class="container">
+          <h1 class="display-3 mb-1">About U.A. High School</h1>
         </div>
-        <h2>Our School</h2>
+      </div>
+    <!--end jumbo-->
+    <!-- Start Content -->
+    <div style="width: 100%;height: 1rem;background-color: firebrick"></div>
+        <div id="content">
+            <!-- About UA Highschool -->
+            <h2>Our School</h2>
         <div style="width: 50%;height: 0.1rem;background-color: firebrick"></div>
         <div class="container-fluid">
             <div class="row">
@@ -85,134 +99,40 @@ img{
                 </div>
             </div>
         </div>
-        <h2>History</h2>
+        <!-- End About UA Highschool -->
+        <h2>Our School</h2>
         <div style="width: 50%;height: 0.1rem;background-color: firebrick"></div>
-        <section>
-            <p>
-                U.A. is the #1 ranked high school for heroics and is considered as the top Hero Academy in Japan.
-                Students are separated into specific Departments and Classes - A, B, C, D, E, F, G, H, I, J and K. At
-                the entrance, there is a security wall nicknamed the "U.A. Barrier" that automatically closes if a
-                person does not have a Student ID Card or Special Entry Permission ID. Many precautions have been made
-                to keep members of the press and villains out.
-            </p>
-        </section>
-        <h2>Enterance Policy</h2>
-        <div style="width: 50%;height: 0.1rem;background-color: firebrick"></div>
-        <p>
-            <strong>U.A.'s Entrance Exam </strong>(雄英高校入学試 Yūei Kōkō Nyūgakushi?), is a test given to middle school
-            students to determine their acceptance into U.A. High School.
-        </p>
-        <section>
-            <h3>Overview</h3>
-
-            <p>
-                U.A. High's Entrance Exam consists of a written and a practical test, with the latter being the more
-                important of the two. During the practical exam, candidates conduct mock battles in replica urban
-                settings. Examinees are given ten minutes to use their quirks to immobilize robotic villains in order
-                to score points depending on the robot's point value. The more points one examinee earns, the higher
-                their chance is to get accepted in U.A. High.
-
-                Candidates are not allowed to fight other candidates. Doing so results in disqualification. Students
-                hailing from the same middle school are placed in different testing areas to avoid potential
-                cooperation.
-
-                Other than scoring villain points, judges monitoring the exam reward rescue points for heroic acts.
-                This criterion is not shared with the students though so they are motivated towards genuine
-                selflessness
-            </p>
-
-        </section>
-        <section>
-            <h3>Points Scale</h3>
-            <p>
-                Each defeated Villain Bot is worth a certain amount of points, which are assigned to the Bots according
-                to their difficulty level:
-            </p>
-            <ol type="1" start="0">
-                <li style="color: red">
-                    <strong>Points</strong> - Arena Traps
-                </li>
-                <li style="color: lightblue">
-                    <strong>Point</strong> - Easy Villains
-                </li>
-                <li style="color: blue">
-                    <strong>Points</strong> - Medium Villains
-                </li>
-                <li style="color: navy">
-                    <strong>Points</strong> - Hard Villains
-                </li>
-            </ol>
-            <p>
-                Arena Traps are massive Villain Bots scattered through the city replicas in order to trap and weed out
-                people from getting high scores. They're not meant to be fought, which is why they're worth no points
-            </p>
-        </section>
-        <section>
-            <h3>Practical Test</h3>
-            <p>
-                Following the written test, all Examinees arrive at U.A. High for the practical. Inside the auditorium,
-                Present Mic explains the rules of the exam: The students must score points by destroying Villain-Bots
-                with various point values. After the explanation, students are separated into their designated battle
-                center for the practical test.
-            </p>
-            <p>
-                The test begins without a countdown. Present Mic states this is because real battles don't have
-                countdowns. The examinees rush into the battle arena and try to destroy as many robots as they can.
-                While Izuku Midoriya frantically searches for just one point, other students rack up anywhere between
-                twenty and forty-five points within the first few minutes. Ochaco Uraraka levitates robots and sends
-                them crashing down. Yuga Aoyama uses his laser to blow them apart. Tenya kicks them with his engine
-                legs, and Katsuki blows them apart with his explosions.
-            </p>
-            <p>
-                Principal Nezu says that the best students use a combination of skill, speed, power and focus to score
-                the most points in the end. As time runs down towards its end, U.A. Faculty members press the "Yakuri
-                Switch" to release the gigantic villain bots worth zero points. The purpose of this robot is so that
-                the judge's panel can observe how students react to the desperate situation created by the giant robot.
-                It presents an opportunity for some students truly shine.
-            </p>
-        </section>
-        <h2>U.A High School In Action!</h2>
-        <div style="width: 50%;height: 0.1rem;background-color: firebrick"></div>
-        <div class="row mt-1">
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card  bg-light cb">
-                    <img class="card-img-top" src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/31/Anime_Art_Poster.png/revision/latest/scale-to-width-down/350?cb=20151109134722"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Season 1</h5>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Season_1" class="btn btn-info">Infomation</a>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Episodes" class="btn btn-primary">Watch</a>
-                    </div>
-                </div>
+        <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card  bg-light cb">
-                    <img class="card-img-top" src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/f/fa/Anime_Art_Poster_%28Season_2%29.png/revision/latest/scale-to-width-down/350?cb=20170407221323"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Season 2</h5>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Season_2" class="btn btn-info">Infomation</a>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Episodes" class="btn btn-primary">Watch</a>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card  bg-light cb">
-                    <img class="card-img-top" src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/c/cd/My_Hero_Academia_Season_3_Poster_1.png/revision/latest/scale-to-width-down/350?cb=20180219032852"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Season 3</h5>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Season_3" class="btn btn-info">Information</a>
-                        <a href="http://bokunoheroacademia.wikia.com/wiki/Episodes" class="btn btn-primary">Watch</a>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
+          </div>
         </div>
-
+    
     </div>
-    <div style="width: 100%;height: 1rem;background-color: firebrick"></div>
-    <!-- Footer -->
+    <!-- end Content -->
+    <!-- Start Footer -->
     <footer class="page-footer font-small blue">
+        <div style="width: 100%;height: 1rem;background-color: firebrick"></div>
+
         <h3>Our Affiliates</h3>
         <!--Grid row-->
         <div class="row justify-content-md-center">
@@ -324,6 +244,9 @@ img{
         <!-- Copyright -->
 
     </footer>
+
+
 </body>
+
 
 </html>
