@@ -84,5 +84,13 @@ footer{
   z-index: -1;
 }
 
-
+.bg-cover-about{
+    background-image: url("images/school.jpg");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
+  
 
