@@ -83,7 +83,6 @@ footer{
   right: 0;
   z-index: -1;
 }
-
 .bg-cover-about{
     background-image: url("images/school.jpg");
     background-size: cover;
@@ -92,5 +91,28 @@ footer{
     position: relative;
     z-index: -2;
   }
-  
+  .bg-cover-staff{
+    background-image: url("http://www.skinit.com/media/catalog/category/My-Hero-Academia.jpg");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
+  .bg-cover-students{
+    background-image: url("images/studentsHA.jpg");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
+  .bg-cover-events{
+    background-image: url("  https://dw9to29mmj727.cloudfront.net/promo/2016/5344-SeriesHeaders_Tier01_MHAv2_2000x800.jpg");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
 

@@ -13,9 +13,18 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="core.css">
 
+    <!-- Calendar Stuff -->
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='js/moment.js'></script>
+    <script src='js/fullcalendar.js'></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="core.css">
+    
 </head>
+
 <body>
 	<!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -38,62 +47,100 @@
                 <li class="nav-item">
                         <a class="nav-link" href="distinguishedstudents.html">Distinguished Students</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calendar.html">Calendar</a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="calendar.html">Calendar</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
     <!-- End Nav Bar -->
-    <!--begin jumbotron-->
-<div class="jumbotron jumbotron bg-cover">
-    <div class="overlay-jumbo"></div>
-    <div class="container">
-      <h1 class="display-3 mb-1">Welcome to U.A. High School</h1>
-    </div>
-  </div>
-<!--end jumbo-->
+    <!-- End Nav Bar -->
+    <div class="jumbotron jumbotron bg-cover-events">
+        <div class="overlay-jumbo"></div>
+        <div class="container">
+          <h1 class="display-3 mb-1">Events at U.A Highschool</h1>
+        </div>
+      </div>
 <div style="width: 100%;height: 1rem;background-color: firebrick"></div>
 <div id="content">
-        <h2>General Information</h2>
-        <div style="width: 50%;height: 0.1rem;background-color: firebrick"></div>
-<!--begin cards-->
-<div class="row mt-1">
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card  bg-light cb" style="height: 300px">
-                    <div class="card-body">
-                        <h5 class="card-title">Why UA High?</h5>
-                        <p>U.A. is the #1 ranked high school for heroics and is considered as the top Hero Academy in Japan. Students are separated into specific Departments and Classes - A, B, C, D, E, F, G, H, I, J and K. At the entrance, there is a security wall nicknamed the "U.A. Barrier" that automatically closes if a person does not have a Student ID Card or Special Entry Permission ID. Many precautions have been made to keep members of the press and villains out.</p>
-                        <!--http://bokunoheroacademia.wikia.com/wiki/U.A._High_School-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card bg-light cb" style="height: 300px">
-                    <div class="card-body">
-                        <h5 class="card-title">Announcements</h5>
-                        <ul>
-                            <li>Teacher Gets Fired in Next Episode!</li>
-                            <li>New Merch Coming Out!</li>
-                            <li>Series Finale Coming Soon?</li>
-                            <li>Student Spills Tea and Whole School Goes Into Riot!!</li>
-                        </ul>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card  bg-light cb" style="height: 300px">
-                    <div class="card-body">
-                        <h5 class="card-title">News</h5>
-                        <p>My Hero Academia's first movie, My Hero Academia: Two Heroes, is scheduled to open August 3 in Japan and later in the U.S theaters this Fall. </p>
-                        <!--https://comicbook.com/anime/2018/07/21/my-hero-academia-u-a-high-school-big-disadvantage-revealed-anime/-->
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--end cards-->
-</div>
+        <h2>U.A High School Events</h2>
+        <div style="width: 50%;height: 0.1rem;background-color: firebrick;margin-bottom: 20px"></div>
+        <div id='calendar'></div>
+  </div>
+  <script>
+
+        $(document).ready(function() {
+      
+          $('#calendar').fullCalendar({
+            header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'month,basicWeek,basicDay'
+            },
+            defaultDate: new Date(),
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Randomly Generated Event',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*20)* (Math.random()<=0.5? -1 : 1)))
+              },
+
+              {
+                title: 'Conference',
+                // start: '2018-03-11',
+                start: new Date().setDate(new Date().getDate() + (Math.round(Math.random()*10)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Meeting',
+                // start: '2018-03-12T10:30:00',
+                start:  new Date().setDate(new Date().getDate() + (Math.round(Math.random()*10)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Lunch',
+                start:  new Date().setDate(new Date().getDate() + (Math.round(Math.random()*10)* (Math.random()<=0.5? -1 : 1)))
+              },
+              {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start:  new Date().setDate(new Date().getDate() + (Math.round(Math.random()*10)* (Math.random()<=0.5? -1 : 1)))
+              }
+            ]
+          });
+      
+        });
+      
+      </script>
  <!--end content-->
     <!-- Footer -->
     <footer class="page-footer font-small blue">
