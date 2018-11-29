@@ -4,6 +4,7 @@ body{
 footer{
     text-align:center;
 }
+
 #content {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -108,11 +109,38 @@ footer{
     z-index: -2;
   }
   .bg-cover-events{
-    background-image: url("  https://dw9to29mmj727.cloudfront.net/promo/2016/5344-SeriesHeaders_Tier01_MHAv2_2000x800.jpg");
+    background-image: url("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/7/75/Sports_Festival.png/revision/latest?cb=20170715212641");
     background-size: cover;
     color: white;
     background-position: center center;
     position: relative;
     z-index: -2;
   }
+  .bg-cover-contact{
+    background-image: url("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/d/d8/Oridera_Junior_High_School_Anime.png/revision/latest?cb=20160411165651");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
+  .bg-cover-test{
+    background-image: url(https://images.wikia.nocookie.net/bokunoheroacademia/images/8/89/DiscussionsRailModuleBackground.png);
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+  }
+ .overlay-carol{
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  } 
+
 
